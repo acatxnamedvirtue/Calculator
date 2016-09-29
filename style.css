@@ -1,0 +1,134 @@
+body {
+  background: #818181;
+  line-height: 1.42857143;
+  font-family: 'Orbitron', sans-serif;
+}
+
+.clearfix:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+.calculator {
+  background: #dfd8d0;
+  width: 300px;
+  height: 410px;
+  margin: 115px auto 30px auto;
+  border: 2px solid #908b85;
+  border-radius: 20px;
+  box-shadow: 7px 10px 34px 1px rgba(0, 0, 0, 0.68), inset -1px -6px 12px 0.1px #89847e;
+}
+
+.display {
+  width: 85%;
+  height: 65px;
+  background: #c3c2ab;
+  border: 2px solid #b4b39d;
+  border-radius: 6px;
+  margin: auto;
+}
+
+.current {
+  font-size: 35px;
+  margin-right: 10px;
+  color: #333333;
+  margin-bottom: 10px;
+}
+
+.history {
+  position: relative;
+  margin-right: 10px;
+  color: #8b8b7b;
+  font-size: 12px;
+  bottom: 17px;
+  height: 10px;
+}
+
+.row1 div, .row2 div, .row3 div, .row4 div, .row5 div, .col1, .col2 {
+  float:left;
+}
+
+.button {
+  font-size: 16px;
+  width: 50px;
+  height: 40px;
+  background: #3a3a3a;
+  margin: 0 9px 10px 8px;
+  box-shadow: 0px 3px 0px 0px #222121, inset -1px -3px 10px 1px #515151;
+  border: none;
+  border-radius: 8px;
+  padding-top: 10px;
+  cursor: pointer;
+}
+
+.buttons {
+  margin-left: 14px;
+  margin-top: 15px;
+  color: #FFFFFF;
+  font-weight: 700;
+}
+
+.red {
+  background: #a72d45;
+  box-shadow: 0px 3px 0px 0px #671c2a;
+  font-size: 14px;
+}
+
+#zero {
+  width: 117px;
+}
+
+#equals {
+  height: 90px;
+  padding: 35px 0;
+}
+
+a, a:hover, a:visited {
+  text-decoration: none;
+  color: #922031;
+}
+
+.button, .button:active, .button:hover, .button:visited {
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+.button:active {
+  transform: translateY(3px);
+  box-shadow: none;
+}
+
+.brand {
+  float: left;
+  margin: -5px 40px -15px 21px;
+  font-size: 43px;
+}
+
+.brand p {
+  transform: scale(1,.75);
+}
+
+.solar {
+  float: left;
+  width: 13px;
+  height: 21px;
+  background: rgb(160,160,140);
+  margin: 0px 1px 0 0;
+  border-radius: 1px;
+}
+
+.solar:last-child {
+  margin-right: 0;
+}
+
+.solar-container {
+  float: left;
+  margin-top: 14px;
+  border: 2px solid rgb(100,100,80);
+  background: rgb(180,179,157);
+  border-radius: 2px;
+}

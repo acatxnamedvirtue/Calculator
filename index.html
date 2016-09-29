@@ -1,0 +1,57 @@
+<head>
+  <link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'>
+  <link href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css' rel='stylesheet' type='text/css'>
+  <link href='style.css' rel='stylesheet' type='text/css'>
+  <script src="calc.js"></script>
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+</head>
+<body>
+  <div class="calculator">
+    <div class="header clearfix">
+      <div class="brand"><p>CASIO</p></div>
+      <div class="solar-container clearfix">
+        <div class="solar"></div><div class="solar"></div><div class="solar"></div><div class="solar"></div>
+      </div>
+    </div>
+
+    <div class="display text-right">
+      <div class="current">0</div>
+      <div class="history">0</div>
+    </div>
+
+    <div class="buttons text-center">
+      <div class="row1 clearfix">
+        <div class="button red" id="AC">AC</div><div class="button red" id="CE">CE</div><div class="button" id="/">/</div><div class="button" id="X">X</div>
+      </div>
+      <div class="row2 clearfix">
+        <div class="button" id="7">7</div><div class="button" id="8">8</div><div class="button" id="9">9</div><div class="button" id="-">-</div>
+      </div>
+      <div class="row3 clearfix">
+        <div class="button" id="4">4</div><div class="button" id="5">5</div><div class="button" id="6">6</div><div class="button" id="+">+</div>
+      </div>
+      <div class="clear">
+        <div class="col1">
+          <div class="row4 clearfix">
+            <div class="button" id="1">1</div><div class="button" id="2">2</div><div class="button" id="3">3</div>
+          </div>
+          <div class="row5 clearfix">
+            <div class="button" id="zero">0</div><div class="button" id=".">.</div>
+          </div>
+        </div>
+        <div class="col2">
+          <div class="row1">
+            <div class="button" id="equals">=</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer text-center">Designed & Coded by <a href="http://codepen.io/acatxnamedvirtue/">acatxnamedvirtue</a></div>
+  <script>$(document).ready(function() {
+    $('.button').on("click", handleClick);
+  });
+  </script>
+</body>
